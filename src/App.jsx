@@ -1,6 +1,6 @@
 /*
 https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14
-tehtävät 1.7
+tehtävät 1.9
 */
 
 import { useState } from "react";
