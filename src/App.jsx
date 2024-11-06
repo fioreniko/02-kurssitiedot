@@ -1,10 +1,11 @@
 /*
 https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14
-tehtävät 1.9
+tehtävät 1.10
 */
 
 import { useState } from "react";
 import Statistics from "./component/Statistics";
+import Button from "./component/Button";
 
 const App = () => {
   const [good, setGood] = useState(0);
@@ -26,9 +27,9 @@ const App = () => {
   return (
     <div>
       <h2>give feedback</h2>
-      <button onClick={handleGoodClick}>good</button>
-      <button onClick={handleNeutralClick}>neutral</button>
-      <button onClick={handleBadClick}>bad</button>
+      <Button handleClick={handleGoodClick} text="good" />
+      <Button handleClick={handleNeutralClick} text="neutral" />
+      <Button handleClick={handleBadClick} text="bad" />
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>
   );
